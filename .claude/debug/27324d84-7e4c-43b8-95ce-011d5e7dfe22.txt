@@ -1,0 +1,302 @@
+2026-03-06T04:24:43.869Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.869Z [DEBUG] MDM settings load completed in 8ms
+2026-03-06T04:24:43.891Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.891Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.json
+2026-03-06T04:24:43.891Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.891Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.local.json
+2026-03-06T04:24:43.902Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.902Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:43.902Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.902Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:43.902Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T04:24:43.902Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-06T04:24:43.902Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-06T04:24:43.902Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-06T04:24:43.903Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T04:24:43.903Z [DEBUG] CA certs: useSystemCA=false, envPath=undefined, configPath=undefined, extraCertsPath=undefined
+2026-03-06T04:24:43.903Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-06T04:24:43.903Z [DEBUG] Error log sink initialized
+2026-03-06T04:24:43.905Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.905Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:43.905Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.905Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.json
+2026-03-06T04:24:43.905Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.905Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.local.json
+2026-03-06T04:24:43.905Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.905Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:43.906Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-06T04:24:43.906Z [DEBUG] Git remote URL: null
+2026-03-06T04:24:43.906Z [DEBUG] No git remote URL found
+2026-03-06T04:24:43.907Z [DEBUG] [ToolSearch:optimistic] mode=tst, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-06T04:24:43.907Z [DEBUG] [STARTUP] Running setup()...
+2026-03-06T04:24:43.909Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:43.909Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:43.909Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/marklin/.claude/skills, project=[]
+2026-03-06T04:24:43.909Z [DEBUG] Error log sink initialized
+2026-03-06T04:24:43.911Z [DEBUG] [Claude in Chrome] Found chrome profiles: Profile 6, Default, Profile 5
+2026-03-06T04:24:43.911Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-03-06T04:24:43.911Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-06T04:24:43.911Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-03-06T04:24:43.911Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-03-06T04:24:43.911Z [DEBUG] Total plugin skills loaded: 0
+2026-03-06T04:24:43.911Z [DEBUG] Total plugin commands loaded: 0
+2026-03-06T04:24:43.912Z [DEBUG] Acquired PID lock for 2.1.70 (PID 34428)
+2026-03-06T04:24:43.912Z [DEBUG] Acquired PID lock on running version: /Users/marklin/.local/share/claude/versions/2.1.70
+2026-03-06T04:24:43.912Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-03-06T04:24:43.912Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills, 0 builtin plugin skills
+2026-03-06T04:24:43.915Z [DEBUG] [STARTUP] setup() completed in 8ms
+2026-03-06T04:24:43.915Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-06T04:24:43.915Z [DEBUG] Total plugin agents loaded: 0
+2026-03-06T04:24:43.915Z [DEBUG] [STARTUP] Commands and agents loaded in 0ms
+2026-03-06T04:24:43.917Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-06T04:24:43.918Z [DEBUG] Cleared CA certificates cache
+2026-03-06T04:24:43.918Z [DEBUG] Cleared mTLS configuration cache
+2026-03-06T04:24:43.918Z [DEBUG] Cleared proxy agent cache
+2026-03-06T04:24:43.918Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T04:24:43.918Z [DEBUG] CA certs: useSystemCA=false, envPath=undefined, configPath=undefined, extraCertsPath=undefined
+2026-03-06T04:24:43.918Z [DEBUG] Grove: Cache stale, returning cached data and refreshing in background
+2026-03-06T04:24:43.920Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-06T04:24:43.920Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-06T04:24:43.920Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-06T04:24:43.921Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-06T04:24:43.923Z [DEBUG] [keybindings] Watching for changes to /Users/marklin/.claude/keybindings.json
+2026-03-06T04:24:43.927Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-03-06T04:24:43.977Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771083977
+2026-03-06T04:24:43.977Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:43.977Z [DEBUG] Temp file written successfully, size: 16040 bytes
+2026-03-06T04:24:43.977Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:43.977Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771083977 to /Users/marklin/.claude.json
+2026-03-06T04:24:43.977Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:44.109Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771084109
+2026-03-06T04:24:44.109Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:44.110Z [DEBUG] Temp file written successfully, size: 16075 bytes
+2026-03-06T04:24:44.110Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:44.110Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771084109 to /Users/marklin/.claude.json
+2026-03-06T04:24:44.110Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:46.921Z [DEBUG] Failed to fetch Grove notice config: AxiosError: timeout of 3000ms exceeded
+2026-03-06T04:24:46.921Z [DEBUG] [STARTUP] showSetupScreens() completed in 3004ms
+2026-03-06T04:24:46.921Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-06T04:24:46.921Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-06T04:24:46.921Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-06T04:24:46.922Z [DEBUG] Starting background startup prefetches
+2026-03-06T04:24:46.922Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T04:24:46.922Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T04:24:46.924Z [DEBUG] [STARTUP] MCP configs resolved in 5ms (awaited at +3018ms)
+2026-03-06T04:24:46.925Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:46.925Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:46.927Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:46.927Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:46.927Z [DEBUG] Total LSP servers loaded: 0
+2026-03-06T04:24:46.927Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T04:24:46.929Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771086929
+2026-03-06T04:24:46.929Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:46.929Z [DEBUG] Temp file written successfully, size: 16114 bytes
+2026-03-06T04:24:46.930Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:46.930Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771086929 to /Users/marklin/.claude.json
+2026-03-06T04:24:46.930Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:46.930Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:46.930Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:46.930Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:46.931Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:46.931Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-06T04:24:46.931Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T04:24:46.931Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-06T04:24:46.931Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-03-06T04:24:46.931Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-06T04:24:46.931Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-06T04:24:46.935Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-06T04:24:46.936Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771086936
+2026-03-06T04:24:46.936Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:46.936Z [DEBUG] Temp file written successfully, size: 16115 bytes
+2026-03-06T04:24:46.936Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:46.936Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771086936 to /Users/marklin/.claude.json
+2026-03-06T04:24:46.937Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:46.937Z [DEBUG] LSP server manager initialized successfully
+2026-03-06T04:24:46.937Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-06T04:24:46.953Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-06T04:24:46.972Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771086972
+2026-03-06T04:24:46.972Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:46.973Z [DEBUG] Temp file written successfully, size: 16115 bytes
+2026-03-06T04:24:46.973Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:46.973Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771086972 to /Users/marklin/.claude.json
+2026-03-06T04:24:46.973Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:46.974Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771086974
+2026-03-06T04:24:46.974Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:46.975Z [DEBUG] Temp file written successfully, size: 16115 bytes
+2026-03-06T04:24:46.975Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:46.975Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771086974 to /Users/marklin/.claude.json
+2026-03-06T04:24:46.975Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:46.977Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-06T04:24:46.978Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-06T04:24:46.978Z [DEBUG] performStartupChecks called
+2026-03-06T04:24:46.978Z [DEBUG] Starting background plugin installations
+2026-03-06T04:24:47.013Z [DEBUG] No CLAUDE.md/rules files found
+2026-03-06T04:24:47.014Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-06T04:24:47.461Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-06T04:24:47.461Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-06T04:24:47.461Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-03-06T04:24:47.462Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-06T04:24:47.465Z [DEBUG] Fetching plugin security messages from https://raw.githubusercontent.com/anthropics/claude-plugins-official/refs/heads/security/security.json
+2026-03-06T04:24:47.467Z [DEBUG] Org fast mode: disabled (extra_usage_disabled)
+2026-03-06T04:24:47.467Z [DEBUG] Watching for changes in setting files /Users/marklin/.claude/settings.json...
+2026-03-06T04:24:47.472Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.481Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/marklin/.local/share/claude/versions/2.1.70)
+2026-03-06T04:24:47.528Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.541Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.542Z [DEBUG] Security messages saved successfully
+2026-03-06T04:24:47.543Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-06T04:24:47.543Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-06T04:24:47.543Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-03-06T04:24:47.544Z [DEBUG] CLAUDE_CODE_WEBSOCKET_AUTH_FILE_DESCRIPTOR not set, no file descriptor token available
+2026-03-06T04:24:47.546Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-03-06T04:24:47.547Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.552Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 8ms
+2026-03-06T04:24:47.552Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"Claude Code Antigravity MCP","version":"2.1.69"}}
+2026-03-06T04:24:47.552Z [DEBUG] [MCP] Server "ide" connected with subscribe=false
+2026-03-06T04:24:47.556Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-06T04:24:47.573Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.575Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.589Z [DEBUG] Checking for native installer update to version 2.1.70
+2026-03-06T04:24:47.589Z [DEBUG] Found 2.1.70 at /Users/marklin/.local/bin/claude, skipping install
+2026-03-06T04:24:47.590Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:47.592Z [DEBUG] Acquired PID lock for 2.1.63 (PID 34428)
+2026-03-06T04:24:47.592Z [DEBUG] Released PID lock for 2.1.63
+2026-03-06T04:24:47.678Z [DEBUG] rg error (signal=null, code=2, stderr: rg: /Users/marklin/.claude/plugins/cache: IO error for operation on /Users/marklin/.claude/plugins/cache: No such file or directory (os error 2)
+), 0 results
+2026-03-06T04:24:48.033Z [ERROR] Error: Error: 1: Command failed with ERR_STREAM_PREMATURE_CLOSE: code --force --install-extension anthropic.claude-code
+Premature close 
+    at pC6 (/$bunfs/root/src/entrypoints/cli.js:608:4240)
+    at async mC6 (/$bunfs/root/src/entrypoints/cli.js:608:1730)
+    at processTicksAndRejections (native:7:39)
+2026-03-06T04:24:48.034Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:48.055Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:49.618Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771089618
+2026-03-06T04:24:49.618Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:24:49.618Z [DEBUG] Temp file written successfully, size: 16190 bytes
+2026-03-06T04:24:49.618Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:24:49.618Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771089618 to /Users/marklin/.claude.json
+2026-03-06T04:24:49.618Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:24:50.411Z [DEBUG] [claudeai-mcp] Fetched 0 servers
+2026-03-06T04:24:50.716Z [DEBUG] [claudeai-mcp] Fetched 0 servers
+2026-03-06T04:24:52.230Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:52.235Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:52.235Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:52.235Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:52.238Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:52.238Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:52.238Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.082Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.086Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:53.086Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:53.090Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.219Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.221Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:53.221Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:53.223Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.326Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.329Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:53.329Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:53.331Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.344Z [DEBUG] Full reset (shrink->below): prevHeight=25, nextHeight=20, viewport=24
+2026-03-06T04:24:53.532Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:53.536Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:24:53.536Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:24:53.538Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:54.533Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:55.079Z [DEBUG] [onSubmit] early return: suggestions showing (count=1)
+2026-03-06T04:24:55.084Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:24:55.298Z [DEBUG] SSH config check: code=255 configured=false
+2026-03-06T04:24:55.314Z [DEBUG] git pull: cwd=/Users/marklin/.claude/plugins/marketplaces/claude-plugins-official ref=default
+2026-03-06T04:24:55.475Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-03-06T04:24:55.475Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-03-06T04:25:13.135Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-06T04:25:13.140Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:13.143Z [DEBUG] Full reset (shrink->below): prevHeight=29, nextHeight=23, viewport=24
+2026-03-06T04:25:13.144Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-06T04:25:13.146Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771113146
+2026-03-06T04:25:13.146Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:25:13.146Z [DEBUG] Temp file written successfully, size: 16191 bytes
+2026-03-06T04:25:13.146Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:25:13.146Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771113146 to /Users/marklin/.claude.json
+2026-03-06T04:25:13.146Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:25:13.148Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771113148
+2026-03-06T04:25:13.148Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:25:13.148Z [DEBUG] Temp file written successfully, size: 16191 bytes
+2026-03-06T04:25:13.148Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:25:13.148Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771113148 to /Users/marklin/.claude.json
+2026-03-06T04:25:13.148Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:25:13.155Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-06T04:25:13.155Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:13.159Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:13.240Z [DEBUG] Checking for native installer update to version 2.1.70
+2026-03-06T04:25:13.240Z [DEBUG] Found 2.1.70 at /Users/marklin/.local/bin/claude, skipping install
+2026-03-06T04:25:13.242Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:13.243Z [DEBUG] Full reset (shrink->below): prevHeight=24, nextHeight=23, viewport=24
+2026-03-06T04:25:16.135Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.137Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.137Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.137Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.138Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.138Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.139Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.298Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.300Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.300Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.301Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.301Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.302Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.495Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.498Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.498Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.503Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.601Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.603Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.603Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.607Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.728Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.731Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.731Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.733Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.913Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:16.915Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:16.915Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:16.916Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:17.197Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:17.198Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:17.198Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:17.200Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:19.767Z [DEBUG] [onSubmit] early return: suggestions showing (count=4)
+2026-03-06T04:25:19.775Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:19.775Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.json
+2026-03-06T04:25:19.775Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:19.775Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/marklin/workspace/my-profile-site/.claude/settings.local.json
+2026-03-06T04:25:19.775Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T04:25:19.775Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T04:25:20.817Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:52.867Z [DEBUG] [useDeferredValue] Messages deferred by 2 (2→4)
+2026-03-06T04:25:52.869Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:52.873Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-06T04:25:52.877Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771152877
+2026-03-06T04:25:52.877Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:25:52.877Z [DEBUG] Temp file written successfully, size: 16191 bytes
+2026-03-06T04:25:52.877Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:25:52.877Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771152877 to /Users/marklin/.claude.json
+2026-03-06T04:25:52.878Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:25:52.879Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.34428.1772771152879
+2026-03-06T04:25:52.879Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T04:25:52.879Z [DEBUG] Temp file written successfully, size: 16191 bytes
+2026-03-06T04:25:52.879Z [DEBUG] Applied original permissions to temp file
+2026-03-06T04:25:52.879Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.34428.1772771152879 to /Users/marklin/.claude.json
+2026-03-06T04:25:52.879Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-06T04:25:52.880Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:52.886Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:25:52.957Z [DEBUG] Checking for native installer update to version 2.1.70
+2026-03-06T04:25:52.958Z [DEBUG] Found 2.1.70 at /Users/marklin/.local/bin/claude, skipping install
+2026-03-06T04:25:52.959Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:00.343Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:00.449Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:01.448Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:01.555Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:01.720Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:01.721Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-06T04:26:02.724Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable

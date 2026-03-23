@@ -1,0 +1,68 @@
+# Plan: Profile Site Content Update
+
+## Context
+여러 섹션에 걸쳐 실제 사용자 정보로 콘텐츠를 업데이트한다.
+
+---
+
+## Changes
+
+**File:** `/Users/marklin/workspace/my-profile-site/index.html`
+
+### 1. Navbar 로고 (line 204)
+`Märklin` → `Märklin Dallenger`
+
+### 2. `<title>` 태그 (line 7)
+`Märklin Dallenger - Data Scientist & Full Stack Developer`
+→ `Märklin Dallenger - Data Analyst at Meta | ML Developer | UCLA Bioengineering Alum`
+
+### 3. Hero bio (lines 241-245)
+기존 텍스트 → 아래 텍스트로 교체 (strong 태그 없이 plain text):
+> "I'm a Data Analyst at Meta with a UCLA Bioengineering background. I love turning messy data into clean, actionable insights. When I'm not at my day job, I'm building 'King Kang' alongside a former MLB shortstop—it's an AI tool designed to perfect your baseball swing. I live for the bridge between data science and real-world building."
+
+### 4. About 섹션 Role (line 319)
+`Data Scientist & Full Stack Developer`
+→ `Data Analyst at Meta | ML Developer | UCLA Bioengineering Alum`
+
+### 5. Experience 섹션 제목 (line 390)
+`Data Scientist & Full Stack Developer`
+→ `Data Analyst at Meta | ML Developer | UCLA Bioengineering Alum`
+
+### 6. Skills 섹션 전체 재구성 (lines 331-378)
+
+기존 4-column 단일 그리드 → 카테고리 기반 레이아웃으로 교체.
+**Data Science & AI 섹션을 시각적으로 가장 크게/강조** 배치.
+
+**레이아웃 구조:**
+```
+[Languages Row]         Python | SQL | JavaScript  (3 cards, 1 row)
+
+[Data Science & AI - Highlighted Section]
+                        NumPy | Matplotlib | PyTorch | Scikit-learn  (4 cards, accent border)
+
+[Web & Backend Row]     React | FastAPI | Firebase  (3 cards)
+
+[Developer Tools Row]   Git | Docker  (2 cards)
+```
+
+**아이콘 (Devicon v2.16.0):**
+| 기술 | Devicon 클래스 |
+|------|--------------|
+| Python | `devicon-python-plain` |
+| SQL | `devicon-postgresql-plain` |
+| JavaScript | `devicon-javascript-plain` |
+| NumPy | `devicon-numpy-plain` |
+| Matplotlib | `devicon-matplotlib-plain` |
+| PyTorch | `devicon-pytorch-plain` |
+| Scikit-learn | `devicon-scikitlearn-plain` |
+| React | `devicon-react-plain` |
+| FastAPI | `devicon-fastapi-plain` |
+| Firebase | `devicon-firebase-plain` |
+| Git | `devicon-git-plain` |
+| Docker | `devicon-docker-plain` |
+
+**강조 스타일:** Data Science & AI 섹션은 별도 배경색 + 더 굵은 border로 구분
+
+## Verification
+- 브라우저에서 index.html 열어 각 섹션 확인
+- Skills 섹션에서 Data Science 카테고리가 시각적으로 강조되는지 확인

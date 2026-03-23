@@ -1,0 +1,407 @@
+2026-03-04T00:57:37.959Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-04T00:57:37.959Z [DEBUG] MDM settings load completed in 7ms
+2026-03-04T00:57:37.983Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-04T00:57:37.983Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-04T00:57:37.983Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-04T00:57:37.983Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-04T00:57:37.985Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-04T00:57:37.986Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-04T00:57:37.986Z [DEBUG] [STARTUP] Running setup()...
+2026-03-04T00:57:37.987Z [DEBUG] Git remote URL: null
+2026-03-04T00:57:37.987Z [DEBUG] No git remote URL found
+2026-03-04T00:57:37.987Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/marklin/.claude/skills, project=[]
+2026-03-04T00:57:37.987Z [DEBUG] Error log sink initialized
+2026-03-04T00:57:37.988Z [DEBUG] [Claude in Chrome] Found chrome profiles: Profile 6, Default, Profile 5
+2026-03-04T00:57:37.989Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-03-04T00:57:37.989Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-04T00:57:37.989Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-03-04T00:57:37.989Z [DEBUG] Total plugin skills loaded: 0
+2026-03-04T00:57:37.989Z [DEBUG] Total plugin commands loaded: 0
+2026-03-04T00:57:37.989Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-03-04T00:57:37.989Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-03-04T00:57:37.989Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills
+2026-03-04T00:57:37.991Z [DEBUG] [STARTUP] setup() completed in 5ms
+2026-03-04T00:57:37.991Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-04T00:57:37.991Z [DEBUG] Total plugin agents loaded: 0
+2026-03-04T00:57:37.991Z [DEBUG] [STARTUP] Commands and agents loaded in 0ms
+2026-03-04T00:57:37.994Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-04T00:57:38.213Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-04T00:57:38.229Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-03-04T00:57:38.238Z [DEBUG] Acquired mtime-based lock on running version: /Users/marklin/.local/share/claude/versions/2.1.63
+2026-03-04T00:57:38.239Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-03-04T00:57:38.241Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772585858241
+2026-03-04T00:57:38.241Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T00:57:38.241Z [DEBUG] Temp file written successfully, size: 383 bytes
+2026-03-04T00:57:38.241Z [DEBUG] Applied original permissions to temp file
+2026-03-04T00:57:38.241Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772585858241 to /Users/marklin/.claude.json
+2026-03-04T00:57:38.241Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T00:57:38.417Z [DEBUG] High write ratio: blit=0, write=1665 (100.0% writes), screen=36x104
+2026-03-04T00:57:38.432Z [DEBUG] High write ratio: blit=0, write=1665 (100.0% writes), screen=36x104
+2026-03-04T00:57:48.018Z [ERROR] Error: Error: 1P event logging: 7 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T00:58:00.024Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772585880024
+2026-03-04T00:58:00.024Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T00:58:00.024Z [DEBUG] Temp file written successfully, size: 383 bytes
+2026-03-04T00:58:00.024Z [DEBUG] Applied original permissions to temp file
+2026-03-04T00:58:00.024Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772585880024 to /Users/marklin/.claude.json
+2026-03-04T00:58:00.024Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T00:58:00.025Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772585880025
+2026-03-04T00:58:00.025Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T00:58:00.026Z [DEBUG] Temp file written successfully, size: 383 bytes
+2026-03-04T00:58:00.026Z [DEBUG] Applied original permissions to temp file
+2026-03-04T00:58:00.026Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772585880025 to /Users/marklin/.claude.json
+2026-03-04T00:58:00.026Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T00:58:00.033Z [DEBUG] High write ratio: blit=0, write=1222 (100.0% writes), screen=29x104
+2026-03-04T00:58:10.054Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T00:58:55.787Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:04:40.742Z [ERROR] Error: Error: Failed to delete keychain entry
+    at bdB (/$bunfs/root/claude:3653:6018)
+    at async E80 (/$bunfs/root/claude:6284:685)
+    at async nkA (/$bunfs/root/claude:6284:589)
+    at async WpT (/$bunfs/root/claude:2413:2226)
+    at async zpT (/$bunfs/root/claude:2437:5405)
+    at async <anonymous> (/$bunfs/root/claude:2453:3956)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:04:40.743Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586280743
+2026-03-04T01:04:40.743Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:04:40.744Z [DEBUG] Temp file written successfully, size: 383 bytes
+2026-03-04T01:04:40.744Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:04:40.744Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586280743 to /Users/marklin/.claude.json
+2026-03-04T01:04:40.744Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:04:40.786Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586280786
+2026-03-04T01:04:40.786Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:04:40.786Z [DEBUG] Temp file written successfully, size: 383 bytes
+2026-03-04T01:04:40.786Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:04:40.786Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586280786 to /Users/marklin/.claude.json
+2026-03-04T01:04:40.786Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:04:40.786Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586280786
+2026-03-04T01:04:40.786Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:04:40.786Z [DEBUG] Temp file written successfully, size: 801 bytes
+2026-03-04T01:04:40.786Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:04:40.786Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586280786 to /Users/marklin/.claude.json
+2026-03-04T01:04:40.786Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:04:40.903Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586280903
+2026-03-04T01:04:40.903Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:04:40.903Z [DEBUG] Temp file written successfully, size: 924 bytes
+2026-03-04T01:04:40.903Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:04:40.903Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586280903 to /Users/marklin/.claude.json
+2026-03-04T01:04:40.903Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:04:41.002Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586281002
+2026-03-04T01:04:41.002Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:04:41.002Z [DEBUG] Temp file written successfully, size: 985 bytes
+2026-03-04T01:04:41.002Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:04:41.002Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586281002 to /Users/marklin/.claude.json
+2026-03-04T01:04:41.003Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:04:41.004Z [DEBUG] Skipping Notification:auth_success hook execution - workspace trust not accepted
+2026-03-04T01:04:44.620Z [DEBUG] High write ratio: blit=0, write=1160 (100.0% writes), screen=28x104
+2026-03-04T01:04:50.458Z [ERROR] Error: Error: 1P event logging: 10 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:05:08.454Z [DEBUG] High write ratio: blit=0, write=1163 (100.0% writes), screen=26x104
+2026-03-04T01:05:18.475Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:05:26.055Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586326055
+2026-03-04T01:05:26.055Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:26.056Z [DEBUG] Temp file written successfully, size: 1121 bytes
+2026-03-04T01:05:26.056Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:26.056Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586326055 to /Users/marklin/.claude.json
+2026-03-04T01:05:26.056Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:26.095Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586326095
+2026-03-04T01:05:26.095Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:26.095Z [DEBUG] Temp file written successfully, size: 1122 bytes
+2026-03-04T01:05:26.095Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:26.095Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586326095 to /Users/marklin/.claude.json
+2026-03-04T01:05:26.095Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:26.096Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586326096
+2026-03-04T01:05:26.096Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:26.096Z [DEBUG] Temp file written successfully, size: 1158 bytes
+2026-03-04T01:05:26.096Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:26.096Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586326096 to /Users/marklin/.claude.json
+2026-03-04T01:05:26.096Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:26.096Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586326096
+2026-03-04T01:05:26.096Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:26.096Z [DEBUG] Temp file written successfully, size: 1229 bytes
+2026-03-04T01:05:26.096Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:26.096Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586326096 to /Users/marklin/.claude.json
+2026-03-04T01:05:26.096Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.205Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331205
+2026-03-04T01:05:31.205Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.205Z [DEBUG] Temp file written successfully, size: 1644 bytes
+2026-03-04T01:05:31.205Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.205Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331205 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.205Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.207Z [DEBUG] Grove: No cache, fetching config in background (dialog skipped this session)
+2026-03-04T01:05:31.208Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-04T01:05:31.209Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-04T01:05:31.209Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-04T01:05:31.210Z [DEBUG] [STARTUP] showSetupScreens() completed in 473216ms
+2026-03-04T01:05:31.210Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-04T01:05:31.210Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-04T01:05:31.210Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-04T01:05:31.210Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-04T01:05:31.210Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-04T01:05:31.211Z [DEBUG] Total LSP servers loaded: 0
+2026-03-04T01:05:31.211Z [DEBUG] [STARTUP] MCP configs loaded in 473226ms
+2026-03-04T01:05:31.214Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-04T01:05:31.214Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-04T01:05:31.214Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-04T01:05:31.214Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-04T01:05:31.214Z [DEBUG] Found 0 hook matchers in settings
+2026-03-04T01:05:31.214Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-04T01:05:31.214Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-03-04T01:05:31.215Z [DEBUG] LSP server manager initialized successfully
+2026-03-04T01:05:31.215Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-04T01:05:31.216Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-04T01:05:31.217Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331217
+2026-03-04T01:05:31.217Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.217Z [DEBUG] Temp file written successfully, size: 1664 bytes
+2026-03-04T01:05:31.217Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.217Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331217 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.218Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.225Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-04T01:05:31.239Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331239
+2026-03-04T01:05:31.239Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.239Z [DEBUG] Temp file written successfully, size: 1700 bytes
+2026-03-04T01:05:31.239Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.239Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331239 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.239Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.240Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331240
+2026-03-04T01:05:31.240Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.240Z [DEBUG] Temp file written successfully, size: 1700 bytes
+2026-03-04T01:05:31.240Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.240Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331240 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.240Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.240Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331240
+2026-03-04T01:05:31.240Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.240Z [DEBUG] Temp file written successfully, size: 1782 bytes
+2026-03-04T01:05:31.240Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.240Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331240 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.241Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.242Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-03-04T01:05:31.242Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-04T01:05:31.242Z [DEBUG] performStartupChecks called
+2026-03-04T01:05:31.242Z [DEBUG] Starting background plugin installations
+2026-03-04T01:05:31.243Z [DEBUG] No CLAUDE.md/rules files found
+2026-03-04T01:05:31.244Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-04T01:05:31.244Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-04T01:05:31.244Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-03-04T01:05:31.244Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-03-04T01:05:31.245Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-04T01:05:31.245Z [DEBUG] Programmatic settings change notification for policySettings
+2026-03-04T01:05:31.246Z [DEBUG] Plugin hooks: skipping reload, enabledPlugins unchanged
+2026-03-04T01:05:31.246Z [DEBUG] Settings changed from policySettings, updating app state
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all allow rules for destination 'userSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all deny rules for destination 'userSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all ask rules for destination 'userSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all allow rules for destination 'projectSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all deny rules for destination 'projectSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all ask rules for destination 'projectSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all deny rules for destination 'localSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Replacing all ask rules for destination 'localSettings' with 0 rule(s): []
+2026-03-04T01:05:31.246Z [DEBUG] Attempting to auto-install official marketplace
+2026-03-04T01:05:31.247Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-04T01:05:31.248Z [DEBUG] Security messages are fresh (<1h old), skipping fetch
+2026-03-04T01:05:31.256Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-04T01:05:31.274Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331274
+2026-03-04T01:05:31.274Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.274Z [DEBUG] Temp file written successfully, size: 1857 bytes
+2026-03-04T01:05:31.274Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.274Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331274 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.274Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.275Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331275
+2026-03-04T01:05:31.275Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.275Z [DEBUG] Temp file written successfully, size: 1896 bytes
+2026-03-04T01:05:31.275Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.275Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331275 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.275Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.275Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331275
+2026-03-04T01:05:31.275Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.275Z [DEBUG] Temp file written successfully, size: 1934 bytes
+2026-03-04T01:05:31.275Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.275Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331275 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.275Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.276Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331276
+2026-03-04T01:05:31.276Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.276Z [DEBUG] Temp file written successfully, size: 1969 bytes
+2026-03-04T01:05:31.276Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.276Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331276 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.276Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.276Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331276
+2026-03-04T01:05:31.276Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.276Z [DEBUG] Temp file written successfully, size: 2001 bytes
+2026-03-04T01:05:31.276Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.276Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331276 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.276Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.277Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331277
+2026-03-04T01:05:31.277Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.277Z [DEBUG] Temp file written successfully, size: 2031 bytes
+2026-03-04T01:05:31.277Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.277Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331277 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.277Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.277Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331277
+2026-03-04T01:05:31.277Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.277Z [DEBUG] Temp file written successfully, size: 2064 bytes
+2026-03-04T01:05:31.277Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.277Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331277 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.277Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.278Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331278
+2026-03-04T01:05:31.278Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.278Z [DEBUG] Temp file written successfully, size: 2101 bytes
+2026-03-04T01:05:31.278Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.278Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331278 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.278Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.278Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331278
+2026-03-04T01:05:31.278Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.278Z [DEBUG] Temp file written successfully, size: 2138 bytes
+2026-03-04T01:05:31.278Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.278Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331278 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.278Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.278Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331278
+2026-03-04T01:05:31.278Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.278Z [DEBUG] Temp file written successfully, size: 2170 bytes
+2026-03-04T01:05:31.278Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.278Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331278 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.278Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.279Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331279
+2026-03-04T01:05:31.279Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.279Z [DEBUG] Temp file written successfully, size: 2205 bytes
+2026-03-04T01:05:31.279Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.279Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331279 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.279Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.279Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331279
+2026-03-04T01:05:31.279Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.279Z [DEBUG] Temp file written successfully, size: 2278 bytes
+2026-03-04T01:05:31.279Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.279Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331279 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.279Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.280Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331280
+2026-03-04T01:05:31.280Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.280Z [DEBUG] Temp file written successfully, size: 2311 bytes
+2026-03-04T01:05:31.280Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.280Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331280 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.280Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.280Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331280
+2026-03-04T01:05:31.280Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.280Z [DEBUG] Temp file written successfully, size: 2341 bytes
+2026-03-04T01:05:31.280Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.280Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331280 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.280Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.280Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331280
+2026-03-04T01:05:31.280Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.280Z [DEBUG] Temp file written successfully, size: 2377 bytes
+2026-03-04T01:05:31.280Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.280Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331280 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.281Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.281Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331281
+2026-03-04T01:05:31.281Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.281Z [DEBUG] Temp file written successfully, size: 2429 bytes
+2026-03-04T01:05:31.281Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.281Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331281 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.281Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.281Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331281
+2026-03-04T01:05:31.281Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.281Z [DEBUG] Temp file written successfully, size: 2469 bytes
+2026-03-04T01:05:31.281Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.281Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331281 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.281Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.282Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331282
+2026-03-04T01:05:31.282Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.282Z [DEBUG] Temp file written successfully, size: 2512 bytes
+2026-03-04T01:05:31.282Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.282Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331282 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.282Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.282Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331282
+2026-03-04T01:05:31.282Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.282Z [DEBUG] Temp file written successfully, size: 2550 bytes
+2026-03-04T01:05:31.282Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.282Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331282 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.282Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.327Z [DEBUG] Writing to temp file: /Users/marklin/.claude/settings.json.tmp.22852.1772586331327
+2026-03-04T01:05:31.327Z [DEBUG] Temp file written successfully, size: 3 bytes
+2026-03-04T01:05:31.327Z [DEBUG] Renaming /Users/marklin/.claude/settings.json.tmp.22852.1772586331327 to /Users/marklin/.claude/settings.json
+2026-03-04T01:05:31.327Z [DEBUG] File /Users/marklin/.claude/settings.json written atomically
+2026-03-04T01:05:31.327Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331327
+2026-03-04T01:05:31.327Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.327Z [DEBUG] Temp file written successfully, size: 2584 bytes
+2026-03-04T01:05:31.327Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.327Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331327 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.328Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.328Z [DEBUG] Org fast mode: disabled (extra_usage_disabled)
+2026-03-04T01:05:31.404Z [DEBUG] Checking for native installer update to version 2.1.63
+2026-03-04T01:05:31.405Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331405
+2026-03-04T01:05:31.405Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.405Z [DEBUG] Temp file written successfully, size: 2727 bytes
+2026-03-04T01:05:31.405Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.405Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331405 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.405Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.405Z [DEBUG] Found 2.1.63 at /Users/marklin/.local/bin/claude, skipping install
+2026-03-04T01:05:31.406Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:05:31.407Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331407
+2026-03-04T01:05:31.407Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.407Z [DEBUG] Temp file written successfully, size: 2772 bytes
+2026-03-04T01:05:31.407Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.407Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331407 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.407Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.467Z [DEBUG] SSH config check: code=255 configured=false
+2026-03-04T01:05:31.467Z [INFO] SSH not configured for GitHub, using HTTPS for anthropics/claude-plugins-official
+2026-03-04T01:05:31.469Z [DEBUG] git pull: cwd=/Users/marklin/.claude/plugins/marketplaces/anthropics-claude-plugins-official ref=default
+2026-03-04T01:05:31.470Z [WARN] git pull failed, will re-clone:
+2026-03-04T01:05:31.470Z [DEBUG] git clone: url=https://github.com/anthropics/claude-plugins-official.git ref=default timeout=120000ms
+2026-03-04T01:05:31.472Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/marklin/.local/share/claude/versions/2.1.63)
+2026-03-04T01:05:31.865Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586331865
+2026-03-04T01:05:31.865Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:31.865Z [DEBUG] Temp file written successfully, size: 2830 bytes
+2026-03-04T01:05:31.865Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:31.865Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586331865 to /Users/marklin/.claude.json
+2026-03-04T01:05:31.866Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:31.880Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:05:32.735Z [DEBUG] git clone succeeded: https://github.com/anthropics/claude-plugins-official.git
+2026-03-04T01:05:32.735Z [DEBUG] Reading marketplace from /Users/marklin/.claude/plugins/marketplaces/anthropics-claude-plugins-official/.claude-plugin/marketplace.json
+2026-03-04T01:05:32.740Z [DEBUG] Added marketplace source: claude-plugins-official
+2026-03-04T01:05:32.740Z [DEBUG] Successfully auto-installed official marketplace
+2026-03-04T01:05:32.741Z [DEBUG] Writing to temp file: /Users/marklin/.claude.json.tmp.22852.1772586332741
+2026-03-04T01:05:32.741Z [DEBUG] Preserving file permissions: 100600
+2026-03-04T01:05:32.741Z [DEBUG] Temp file written successfully, size: 2925 bytes
+2026-03-04T01:05:32.741Z [DEBUG] Applied original permissions to temp file
+2026-03-04T01:05:32.741Z [DEBUG] Renaming /Users/marklin/.claude.json.tmp.22852.1772586332741 to /Users/marklin/.claude.json
+2026-03-04T01:05:32.741Z [DEBUG] File /Users/marklin/.claude.json written atomically
+2026-03-04T01:05:32.741Z [DEBUG] Showing marketplace installation success notification
+2026-03-04T01:05:34.153Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:05:36.128Z [ERROR] Error: Error: 1P event logging: 28 events failed to export (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)
+    at queueFailedEvents (/$bunfs/root/claude:6264:2403)
+    at async doExport (/$bunfs/root/claude:6264:1310)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:05:36.128Z [ERROR] Error: Error: {"message":"Failed to export 28 events (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)","originalLine":"6264","originalColumn":"1462","line":"6264","column":"1462","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 28 events (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)\n    at doExport (/$bunfs/root/claude:6264:1462)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2402:25029)
+    at <anonymous> (/$bunfs/root/claude:119:92465)
+    at A4D (/$bunfs/root/claude:119:93009)
+    at <anonymous> (/$bunfs/root/claude:120:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-04T01:05:36.128Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 28 events (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)","originalLine":"6264","originalColumn":"1462","line":"6264","column":"1462","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 28 events (status=429, code=ERR_BAD_REQUEST, Request failed with status code 429)\n    at doExport (/$bunfs/root/claude:6264:1462)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-04T01:07:22.989Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:07:24.005Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:35.986Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:38.709Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:38.716Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:38.719Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:39.590Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:39.600Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.024Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.029Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.176Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.181Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.413Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:40.419Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-03-04T01:10:41.412Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable

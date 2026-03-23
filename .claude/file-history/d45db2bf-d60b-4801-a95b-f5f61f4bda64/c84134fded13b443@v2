@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(html|md|json\\)$\")",
+      "Bash(npm list:*)",
+      "Skill(update-config)",
+      "Bash(claude mcp:*)"
+    ]
+  },
+  "enabledMcpjsonServers": []
+}

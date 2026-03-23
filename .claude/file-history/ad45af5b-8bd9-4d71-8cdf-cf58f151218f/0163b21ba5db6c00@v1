@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "haiku",
+  "statusLine": {
+    "type": "command",
+    "command": "sh /Users/marklin/.claude/statusline-command.sh"
+  }
+}
