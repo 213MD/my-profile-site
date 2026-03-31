@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Märklin Dallenger - Applied AI Engineer | AI Safety & Integrity | 0-to-1 Builder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0f1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(15, 17, 23, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    }
+
+    nav a {
+      position: relative;
+      color: #c9d1d9;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #64ffda;
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #64ffda;
+    }
+
+    /* Typing Animation */
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .roles-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .role-line {
+      min-height: 1.2em;
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+    }
+
+    .role-text {
+      display: inline;
+    }
+
+    .cursor {
+      display: inline-block;
+      animation: blink 0.75s step-end infinite;
+      color: #64ffda;
+    }
+
+    .cursor.hidden {
+      display: none;
+    }
+
+    /* Marquee Animation */
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-content {
+      display: flex;
+      animation: marquee 28s linear infinite;
+      white-space: nowrap;
+    }
+
+    .marquee-item {
+      padding: 0 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #64ffda;
+      letter-spacing: 2px;
+    }
+
+    /* Decorative Box */
+    .deco-box {
+      border: 2px solid #64ffda;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #64ffda;
+      font-weight: bold;
+      text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+    }
+
+    /* Skills Card */
+    .skill-card {
+      border: 2px solid rgba(100, 255, 218, 0.2);
+      border-radius: 8px;
+      padding: 2rem;
+      background-color: rgba(100, 255, 218, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      border-color: #64ffda;
+      background-color: rgba(100, 255, 218, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    }
+
+    /* Skills Category Container */
+    .skills-category {
+      margin-bottom: 3rem;
+    }
+
+    .skills-category-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #c9d1d9;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Highlighted Data Science Category */
+    .skills-category.highlighted {
+      padding: 2.5rem;
+      background-color: rgba(100, 255, 218, 0.08);
+      border: 2px solid rgba(100, 255, 218, 0.3);
+      border-radius: 8px;
+    }
+
+    .skills-category.highlighted .skills-category-title {
+      color: #64ffda;
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    /* Accent Dot */
+    .accent-dot {
+      color: #64ffda;
+      display: inline;
+    }
+
+    /* Section Heading */
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    /* Hero Text Gradient */
+    .role-gradient {
+      background: linear-gradient(135deg, #64ffda, #6ecfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    /* Experience Card Featured */
+    .experience-card-featured {
+      border-left: 4px solid #64ffda;
+      background: linear-gradient(135deg, rgba(100, 255, 218, 0.05) 0%, rgba(110, 207, 255, 0.05) 100%);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .experience-card-featured:hover {
+      box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* AI Safety Badge */
+    .badge-safety {
+      display: inline-block;
+      background-color: rgba(100, 255, 218, 0.15);
+      border: 1px solid #64ffda;
+      color: #64ffda;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Fast Shipping Badge */
+    .badge-fast {
+      display: inline-block;
+      background-color: rgba(255, 213, 0, 0.15);
+      border: 1px solid #ffd500;
+      color: #ffd500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Secondary Link */
+    .link-secondary {
+      color: #6ecfff;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .link-secondary:hover {
+      color: #64ffda;
+    }
+
+    /* Outcome List */
+    .outcome-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .outcome-list li {
+      margin-bottom: 0.75rem;
+      color: #c9d1d9;
+    }
+
+    .outcome-list li:before {
+      content: "▸ ";
+      color: #64ffda;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    /* Skill Tag */
+    .skill-tag {
+      display: inline-block;
+      background-color: rgba(100, 255, 218, 0.2);
+      border: 1px solid #64ffda;
+      color: #64ffda;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Grid 5 Columns */
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 1280px) {
+      .grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .section-heading {
+        font-size: 1.875rem;
+      }
+
+      .role-gradient {
+        font-size: 1.875rem;
+      }
+
+      .deco-box {
+        font-size: 3rem;
+      }
+
+      .marquee-item {
+        padding: 0 1rem;
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="py-4 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="text-2xl font-bold">
+        <span class="text-white">Märklin Dallenger</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-20 md:py-32 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Decorative Box -->
+        <div class="flex justify-center">
+          <div class="deco-box w-64 h-64 md:w-72 md:h-72">
+            &lt;/&gt;
+          </div>
+        </div>
+
+        <!-- Right: Hero Text -->
+        <div>
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+            Hi, I'm Märklin<span class="accent-dot">.</span>
+          </h1>
+
+          <p class="text-xl text-gray-300 mb-8 font-semibold">
+            Applied AI Engineer specializing in Reliability, Safety, and 0-to-1 Build Cycles.
+          </p>
+
+          <div class="roles-container mb-8">
+            <div class="role-line role-gradient"><span class="role-text"></span><span class="cursor">|</span></div>
+            <div class="role-line role-gradient"><span class="role-text"></span><span class="cursor hidden">|</span>
+            </div>
+            <div class="role-line role-gradient"><span class="role-text"></span><span class="cursor hidden">|</span>
+            </div>
+          </div>
+
+          <p class="text-lg text-gray-400 mb-8 leading-relaxed max-w-md">
+            Building reliable AI systems at Meta. Shipping 0-to-1 products at King Kang. Always at the edge of what's possible.
+          </p>
+
+          <div class="flex gap-6">
+            <div class="flex items-center gap-3">
+              <i class="devicon-python-plain text-3xl" style="color: #64ffda;"></i>
+              <span class="text-gray-300">Python</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="devicon-mysql-plain text-3xl" style="color: #64ffda;"></i>
+              <span class="text-gray-300">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <section class="py-8 border-t border-b border-gray-700 overflow-hidden">
+    <div class="marquee-content">
+      <div class="marquee-item">APPLIED AI</div>
+      <div class="marquee-item">AI SAFETY</div>
+      <div class="marquee-item">RED TEAMING</div>
+      <div class="marquee-item">LLAMA</div>
+      <div class="marquee-item">META</div>
+      <div class="marquee-item">KING KANG</div>
+      <div class="marquee-item">NEXT.JS</div>
+      <div class="marquee-item">SUPABASE</div>
+      <div class="marquee-item">MCP</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">APPLIED AI</div>
+      <div class="marquee-item">AI SAFETY</div>
+      <div class="marquee-item">RED TEAMING</div>
+      <div class="marquee-item">LLAMA</div>
+      <div class="marquee-item">META</div>
+      <div class="marquee-item">KING KANG</div>
+      <div class="marquee-item">NEXT.JS</div>
+      <div class="marquee-item">SUPABASE</div>
+      <div class="marquee-item">MCP</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-32 px-6 md:px-12 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-heading">
+        About<span class="accent-dot">.</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Decorative Card -->
+        <div class="flex justify-center">
+          <img src="image/profile_1.JPG" alt="Märklin Dallenger" class="w-64 h-80 rounded-lg object-cover border-2 border-gray-700">
+        </div>
+
+        <!-- Right: Bio -->
+        <div>
+          <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+            Currently at <strong class="text-white">Meta Platforms</strong>, ensuring the safety of flagship models like Llama and Avocado. Founding AI Engineer at <strong class="text-white">King Kang Baseball</strong>, bridging MLB heuristics with ML architecture. <strong class="text-white">UCLA Bioengineering</strong> graduate & <a href="https://www.nature.com/articles/s41467-024-52462-8" class="link-secondary">Nature Communications</a> author.
+          </p>
+
+          <div class="space-y-4">
+            <div>
+              <p class="text-gray-400 text-sm uppercase tracking-wider mb-3">Role</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge-safety">🛡️ AI Safety & Integrity</span>
+                <span class="badge-fast">⚡ Fast Shipping</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm uppercase tracking-wider mb-2">Education</p>
+              <p class="text-white text-lg font-semibold">BS, Bioengineering, UCLA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 md:py-32 px-6 md:px-12 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-heading">
+        Skills<span class="accent-dot">.</span>
+      </h2>
+
+      <!-- Languages -->
+      <div class="skills-category">
+        <div class="skills-category-title">Languages</div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="skill-card">
+            <i class="devicon-python-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Python</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-postgresql-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">SQL</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">JavaScript</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science & AI (Highlighted) -->
+      <div class="skills-category highlighted">
+        <div class="skills-category-title">Data Science & AI</div>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="skill-card">
+            <i class="devicon-numpy-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">NumPy</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-matplotlib-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Matplotlib</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-pytorch-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">PyTorch</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-scikitlearn-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Scikit-learn</h3>
+          </div>
+          <div class="skill-card">
+            <svg class="w-16 h-16 text-4xl mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-6-4h6v2h-6z" fill="#64ffda"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Prompt Engineering</h3>
+          </div>
+          <div class="skill-card">
+            <svg class="w-16 h-16 text-4xl mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" fill="#64ffda"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Red Teaming</h3>
+          </div>
+          <div class="skill-card">
+            <svg class="w-16 h-16 text-4xl mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="#64ffda"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Adversarial Testing</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web & Backend -->
+      <div class="skills-category">
+        <div class="skills-category-title">Web & Backend</div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="skill-card">
+            <i class="devicon-react-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">React</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-fastapi-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">FastAPI</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-nextjs-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Next.js</h3>
+          </div>
+          <div class="skill-card">
+            <svg class="w-16 h-16 text-4xl mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" fill="#64ffda"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Supabase</h3>
+          </div>
+          <div class="skill-card">
+            <svg class="w-16 h-16 text-4xl mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" fill="#64ffda"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">MCP</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Developer Tools -->
+      <div class="skills-category">
+        <div class="skills-category-title">Developer Tools</div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="skill-card">
+            <i class="devicon-git-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Git</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-docker-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Docker</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 md:py-32 px-6 md:px-12 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-heading">
+        Experience<span class="accent-dot">.</span>
+      </h2>
+
+      <div class="space-y-8">
+        <!-- Experience Card 1: Meta -->
+        <div class="experience-card-featured">
+          <div class="badge-safety mb-4">🛡️ AI Safety & Integrity</div>
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <h3 class="text-2xl font-bold text-white">AI Model Integrity & Evaluation</h3>
+            <span class="text-gray-400 text-sm">2023 - Present</span>
+          </div>
+          <p class="text-lg text-gray-300 mb-6">Meta Platforms</p>
+
+          <p class="text-gray-400 mb-4 font-semibold">Key Outcomes</p>
+          <ul class="outcome-list mb-6">
+            <li>Prevented premature release of Avocado model by identifying critical flaws</li>
+            <li>Technical lead for nationwide Python benchmarking teams</li>
+          </ul>
+
+          <p class="text-gray-400 mb-3 font-semibold">Skills</p>
+          <div>
+            <span class="skill-tag">Adversarial Testing</span>
+            <span class="skill-tag">Red Teaming</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <!-- Experience Card 2: King Kang -->
+        <div class="experience-card-featured">
+          <div class="badge-fast mb-4">⚡ Fast Shipping</div>
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <h3 class="text-2xl font-bold text-white">Founding AI Engineer</h3>
+            <span class="text-gray-400 text-sm">2023 - Present</span>
+          </div>
+          <p class="text-lg text-gray-300 mb-6">King Kang Baseball</p>
+
+          <p class="text-gray-400 leading-relaxed">
+            Leading end-to-end AI development for baseball swing analysis platform. Built production systems from concept to deployment using modern AI stack.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 md:py-32 px-6 md:px-12 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-heading">
+        Projects<span class="accent-dot">.</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1: King Kang Baseball AI -->
+        <div class="border border-gray-700 rounded-lg p-8 hover:border-accent transition-colors"
+          style="border-color: rgba(100, 255, 218, 0.3);">
+          <div class="flex items-center gap-3 mb-4">
+            <h3 class="text-xl font-bold text-white">King Kang Baseball AI</h3>
+            <span class="badge-fast text-xs">⚡ Fast Shipping</span>
+          </div>
+          <p class="text-gray-400 text-sm mb-2">Stealth Mode</p>
+          <p class="text-gray-400 mb-6">
+            Built an end-to-end AI coaching pipeline from scratch in under 4 months.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Llama & Avocado Model Evaluation -->
+        <div class="border border-gray-700 rounded-lg p-8 hover:border-accent transition-colors"
+          style="border-color: rgba(100, 255, 218, 0.3);">
+          <div class="flex items-center gap-3 mb-4">
+            <h3 class="text-xl font-bold text-white">Llama & Avocado Model Evaluation</h3>
+            <span class="badge-safety text-xs">🛡️ AI Safety</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Comprehensive adversarial testing and red teaming framework for flagship AI models.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="skill-tag">Red Teaming</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Adversarial Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 md:py-32 px-6 md:px-12 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-heading">
+        Contact<span class="accent-dot">.</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+            I'm always interested in collaborating on exciting projects and discussing new opportunities. Feel free to reach out!
+          </p>
+
+          <div class="space-y-6">
+            <div>
+              <p class="text-gray-400 text-sm uppercase tracking-wider mb-2">Email</p>
+              <a href="mailto:mdallenger@gmail.com" class="text-xl text-white hover:text-accent transition-colors"
+                style="color: #64ffda;">mdallenger@gmail.com</a>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm uppercase tracking-wider mb-3">Social</p>
+              <div class="flex gap-6">
+                <a href="https://github.com/213MD" class="text-gray-400 hover:text-accent transition-colors"
+                  style="text-decoration: none;">GitHub</a>
+                <a href="https://www.linkedin.com/in/marklin-dallenger-7a2a16261/" class="text-gray-400 hover:text-accent transition-colors"
+                  style="text-decoration: none;">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div
+            class="w-64 h-64 bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-accent-color rounded-lg flex items-center justify-center"
+            style="border-color: #64ffda;">
+            <div class="text-center text-gray-400">
+              <div class="text-6xl mb-4">💬</div>
+              <p>Let's connect!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 md:px-12 border-t border-gray-700 text-center text-gray-500">
+    <p>&copy; 2026 Märklin Dallenger. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 타이핑 애니메이션 - 여러 역할 라인에 대한 순차 타이핑
+    const roles = ['Applied AI Engineer', 'AI Safety & Integrity', '0-to-1 Builder'];
+
+    function typeRole(lineIndex, text, cb) {
+      const lines = document.querySelectorAll('.role-line');
+      const textSpan = lines[lineIndex].querySelector('.role-text');
+      const cursor = lines[lineIndex].querySelector('.cursor');
+      cursor.classList.remove('hidden');
+      let i = 0;
+      const timer = setInterval(() => {
+        textSpan.textContent += text[i++];
+        if (i === text.length) {
+          clearInterval(timer);
+          if (cb) {
+            cb();
+            cursor.classList.add('hidden');
+          }
+        }
+      }, 60);
+    }
+
+    // Start typing animation on page load
+    typeRole(0, roles[0], () =>
+      setTimeout(() => typeRole(1, roles[1], () =>
+        setTimeout(() => typeRole(2, roles[2], null), 200)
+      ), 200)
+    );
+
+    // Navbar Active Link
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Update active link on scroll
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section[id]');
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // Tailwind Config
+    if (typeof tailwind !== 'undefined') {
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: '#64ffda'
+            },
+            fontFamily: {
+              sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+            }
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
