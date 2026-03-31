@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Märklin Dallenger - Data Analyst at Meta | ML Developer | UCLA Bioengineering Alum</title>
+  <title>Märklin Dallenger - Applied AI Engineer | AI Safety & Integrity | 0-to-1 Builder</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <style>
@@ -219,6 +219,114 @@
         font-size: 0.875rem;
       }
     }
+
+    /* Experience 강조 카드 */
+    .experience-card-featured {
+      border-left: 4px solid #64ffda;
+      background: linear-gradient(135deg, rgba(100,255,218,0.06) 0%, rgba(15,17,23,0) 60%);
+      border-top: 1px solid rgba(100,255,218,0.25);
+      border-right: 1px solid rgba(100,255,218,0.1);
+      border-bottom: 1px solid rgba(100,255,218,0.1);
+      border-radius: 0 8px 8px 0;
+      padding: 2rem 2.5rem;
+      box-shadow: -4px 0 24px rgba(100,255,218,0.12), 0 0 40px rgba(100,255,218,0.04);
+      transition: box-shadow 0.3s ease;
+    }
+    .experience-card-featured:hover {
+      box-shadow: -4px 0 32px rgba(100,255,218,0.22), 0 0 60px rgba(100,255,218,0.08);
+    }
+
+    /* AI Safety 뱃지 */
+    .badge-safety {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background-color: rgba(100,255,218,0.1);
+      color: #64ffda;
+      border: 1px solid rgba(100,255,218,0.35);
+      border-radius: 9999px;
+    }
+
+    /* Fast Shipping 뱃지 */
+    .badge-fast {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background-color: rgba(255,213,0,0.08);
+      color: #ffd500;
+      border: 1px solid rgba(255,213,0,0.3);
+      border-radius: 9999px;
+    }
+
+    /* Nature Communications 링크 스타일 */
+    .link-secondary {
+      color: #6ecfff;
+      text-decoration: underline;
+      text-decoration-color: rgba(110,207,255,0.4);
+      text-underline-offset: 3px;
+      transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    }
+    .link-secondary:hover {
+      color: #64ffda;
+      text-decoration-color: #64ffda;
+    }
+
+    /* Key Outcome 리스트 */
+    .outcome-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .outcome-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: #c9d1d9;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .outcome-list li::before {
+      content: '▸';
+      color: #64ffda;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+
+    /* Skill 태그 */
+    .skill-tag {
+      display: inline-block;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background-color: rgba(100,255,218,0.08);
+      color: #64ffda;
+      border: 1px solid rgba(100,255,218,0.25);
+      border-radius: 4px;
+    }
+
+    /* Data Science AI 카테고리 5열 그리드 */
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+    @media (max-width: 1024px) {
+      .grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 768px) {
+      .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
   </style>
 </head>
 
@@ -255,6 +363,9 @@
           <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">
             Hi, I'm Märklin<span class="accent-dot">.</span>
           </h1>
+          <p class="text-base text-gray-400 mb-4 leading-relaxed max-w-lg" style="font-style: italic;">
+            Applied AI Engineer specializing in Reliability, Safety, and 0-to-1 Build Cycles.
+          </p>
 
           <div class="roles-container mb-8">
             <div class="role-line role-gradient"><span class="role-text"></span><span class="cursor">|</span></div>
@@ -265,7 +376,7 @@
           </div>
 
           <p class="text-lg text-gray-400 mb-8 leading-relaxed max-w-md">
-            I'm a Data Analyst at Meta with a UCLA Bioengineering background. I love turning messy data into clean, actionable insights. When I'm not at my day job, I'm building 'King Kang' alongside a former MLB shortstop—it's an AI tool designed to perfect your baseball swing. I live for the bridge between data science and real-world building.
+            Building reliable AI systems at Meta. Shipping 0-to-1 products at King Kang. Always at the edge of what's possible.
           </p>
 
           <div class="flex gap-6">
@@ -285,22 +396,26 @@
 
   <!-- Marquee Banner -->
   <section class="py-8 border-t border-b border-gray-700 overflow-hidden">
-    <div class="marquee-content">
-      <div class="marquee-item">PYTHON</div>
-      <div class="marquee-item">SQL</div>
-      <div class="marquee-item">DATA SCIENCE</div>
-      <div class="marquee-item">MACHINE LEARNING</div>
-      <div class="marquee-item">FULL STACK</div>
+    <div class="marquee-content" style="animation: marquee 28s linear infinite;">
+      <div class="marquee-item">APPLIED AI</div>
+      <div class="marquee-item">AI SAFETY</div>
+      <div class="marquee-item">RED TEAMING</div>
+      <div class="marquee-item">LLAMA</div>
       <div class="marquee-item">META</div>
-      <div class="marquee-item">ANALYTICS</div>
+      <div class="marquee-item">KING KANG</div>
+      <div class="marquee-item">NEXT.JS</div>
+      <div class="marquee-item">SUPABASE</div>
+      <div class="marquee-item">MCP</div>
       <!-- Duplicate for seamless loop -->
-      <div class="marquee-item">PYTHON</div>
-      <div class="marquee-item">SQL</div>
-      <div class="marquee-item">DATA SCIENCE</div>
-      <div class="marquee-item">MACHINE LEARNING</div>
-      <div class="marquee-item">FULL STACK</div>
+      <div class="marquee-item">APPLIED AI</div>
+      <div class="marquee-item">AI SAFETY</div>
+      <div class="marquee-item">RED TEAMING</div>
+      <div class="marquee-item">LLAMA</div>
       <div class="marquee-item">META</div>
-      <div class="marquee-item">ANALYTICS</div>
+      <div class="marquee-item">KING KANG</div>
+      <div class="marquee-item">NEXT.JS</div>
+      <div class="marquee-item">SUPABASE</div>
+      <div class="marquee-item">MCP</div>
     </div>
   </section>
 
@@ -312,30 +427,33 @@
       </h2>
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <!-- Left: Decorative Card -->
+        <!-- Left: Profile Image -->
         <div class="flex justify-center">
-          <div
-            class="w-64 h-80 bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 rounded-lg flex items-center justify-center">
-            <div class="text-center text-gray-400">
-              <p>[Image Placeholder: Professional Photo or Project Snapshot]</p>
-            </div>
-          </div>
+          <img
+            src="image/profile_1.JPG"
+            alt="Märklin Dallenger"
+            class="w-64 h-80 rounded-lg object-cover border-2 border-gray-700 shadow-lg"
+          />
         </div>
 
         <!-- Right: Bio -->
         <div>
           <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-            <strong class="text-white">UCLA</strong> Bioengineering grad, currently scaling data at <strong class="text-white">Meta Platforms</strong>.
+            Currently at <strong class="text-white">Meta Platforms</strong>, ensuring the safety of flagship models like <strong class="text-white">Llama</strong> and <strong class="text-white">Avocado</strong>.
+            Founding AI Engineer at <strong class="text-white">King Kang Baseball</strong>, bridging MLB heuristics with ML architecture.
           </p>
 
           <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-            I thrive at the intersection of complex systems and clean code. Between optimizing data ecosystems at <strong class="text-white">Meta</strong> and co-developing <strong class="text-white">'King Kang'</strong>—an AI swing-analysis tool with a former <strong class="text-white">MLB</strong> shortstop—I build solutions that bridge the gap between raw data and real-world impact.
+            <strong class="text-white">UCLA Bioengineering</strong> graduate &amp; <a href="https://www.nature.com/articles/s41467-024-52462-8" target="_blank" rel="noopener noreferrer" class="link-secondary">Nature Communications</a> author.
           </p>
 
           <div class="space-y-4">
             <div>
               <p class="text-gray-400 text-sm uppercase tracking-wider mb-2">Role</p>
-              <p class="text-white text-lg font-semibold">Data Analyst @ Meta | ML Developer @ King Kang</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="badge-safety">🛡️ AI Safety &amp; Integrity</span>
+                <span class="badge-fast">⚡ 0-to-1 Builder</span>
+              </div>
             </div>
             <div>
               <p class="text-gray-400 text-sm uppercase tracking-wider mb-2">Education</p>
@@ -376,7 +494,7 @@
       <!-- Data Science & AI (Highlighted) -->
       <div class="skills-category highlighted">
         <div class="skills-category-title">Data Science & AI</div>
-        <div class="grid md:grid-cols-4 gap-6">
+        <div class="grid-5">
           <div class="skill-card">
             <i class="devicon-numpy-plain text-5xl" style="color: #64ffda;"></i>
             <h3 class="text-xl font-bold text-white mt-4">NumPy</h3>
@@ -393,13 +511,36 @@
             <i class="devicon-scikitlearn-plain text-5xl" style="color: #64ffda;"></i>
             <h3 class="text-xl font-bold text-white mt-4">Scikit-learn</h3>
           </div>
+          <div class="skill-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <line x1="9" y1="10" x2="15" y2="10"/>
+              <line x1="9" y1="14" x2="13" y2="14"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Prompt Engineering</h3>
+          </div>
+          <div class="skill-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Red Teaming</h3>
+          </div>
+          <div class="skill-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+              <circle cx="12" cy="15" r="2"/>
+              <path d="M12 13v-2"/>
+            </svg>
+            <h3 class="text-xl font-bold text-white mt-4">Adversarial Testing</h3>
+          </div>
         </div>
       </div>
 
       <!-- Web & Backend -->
       <div class="skills-category">
         <div class="skills-category-title">Web & Backend</div>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-6 gap-6">
           <div class="skill-card">
             <i class="devicon-react-plain text-5xl" style="color: #64ffda;"></i>
             <h3 class="text-xl font-bold text-white mt-4">React</h3>
@@ -411,6 +552,18 @@
           <div class="skill-card">
             <i class="devicon-firebase-plain text-5xl" style="color: #64ffda;"></i>
             <h3 class="text-xl font-bold text-white mt-4">Firebase</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-nextjs-plain text-5xl" style="color: #64ffda;"></i>
+            <h3 class="text-xl font-bold text-white mt-4">Next.js</h3>
+          </div>
+          <div class="skill-card">
+            <div class="text-5xl font-bold" style="color: #64ffda; line-height: 1;">SB</div>
+            <h3 class="text-xl font-bold text-white mt-4">Supabase</h3>
+          </div>
+          <div class="skill-card">
+            <div class="text-5xl font-bold" style="color: #64ffda; line-height: 1; font-size: 2rem;">MCP</div>
+            <h3 class="text-xl font-bold text-white mt-4">MCP</h3>
           </div>
         </div>
       </div>
@@ -440,15 +593,43 @@
       </h2>
 
       <div class="space-y-8">
-        <div class="border-l-4 border-accent pl-8" style="border-color: #64ffda;">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-            <h3 class="text-2xl font-bold text-white">Data Analyst at Meta | ML Developer | UCLA Bioengineering Alum</h3>
-            <span class="text-gray-400 text-sm">2021 - Present</span>
+        <!-- Featured: Meta AI Integrity -->
+        <div class="experience-card-featured">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="badge-safety">🛡️ AI Safety</span>
           </div>
-          <p class="text-lg text-gray-300 mb-3">Meta Platforms</p>
+          <div class="mb-3">
+            <h3 class="text-2xl font-bold text-white">AI Model Integrity &amp; Evaluation</h3>
+            <p class="text-lg mt-1" style="color: #64ffda;">Meta Platforms</p>
+          </div>
+
+          <div class="mb-5">
+            <p class="text-gray-400 text-sm uppercase tracking-wider mb-3">Key Outcomes</p>
+            <ul class="outcome-list">
+              <li>Prevented premature release of <strong class="text-white">Avocado</strong> model by identifying critical flaws prior to launch.</li>
+              <li>Acted as the technical lead for nationwide Python benchmarking teams evaluating frontier model capabilities.</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">Adversarial Testing</span>
+            <span class="skill-tag">Red Teaming</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <!-- King Kang (Founding AI Engineer) -->
+        <div class="border-l-4 pl-8" style="border-color: rgba(100,255,218,0.4); padding-left: 2rem;">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="badge-fast">⚡ Fast Shipping</span>
+          </div>
+          <div class="mb-3">
+            <h3 class="text-2xl font-bold text-white">Founding AI Engineer</h3>
+            <p class="text-lg mt-1" style="color: #64ffda;">King Kang Baseball</p>
+          </div>
           <p class="text-gray-400 leading-relaxed">
-            Designed and deployed machine learning models for analytics pipelines. Built full-stack applications for
-            internal tools and data visualization dashboards used across the organization.
+            Bridging MLB heuristics with ML architecture to build an end-to-end AI coaching pipeline from scratch.
           </p>
         </div>
       </div>
@@ -463,29 +644,43 @@
       </h2>
 
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="border border-gray-700 rounded-lg p-8 hover:border-accent transition-colors"
-          style="border-color: rgba(100, 255, 218, 0.3);">
-          <h3 class="text-xl font-bold text-white mb-3">Analytics Dashboard</h3>
-          <p class="text-gray-400 mb-4">
-            Built a real-time analytics dashboard for data visualization and insights generation.
+        <!-- King Kang Baseball AI (주요 프로젝트) -->
+        <div class="border rounded-lg p-8 transition-all"
+          style="border-color: rgba(100,255,218,0.4); background: linear-gradient(135deg, rgba(100,255,218,0.05), transparent);">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="badge-fast">⚡ Fast Shipping</span>
+            <span class="text-gray-500 text-xs">Stealth Mode</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">King Kang Baseball AI</h3>
+          <p class="text-gray-400 mb-4 leading-relaxed">
+            Built an end-to-end AI coaching pipeline from scratch in under 4 months.
+            Integrates MLB biomechanics heuristics with real-time ML inference.
           </p>
-          <div class="flex gap-3 flex-wrap">
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">Python</span>
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">React</span>
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">PostgreSQL</span>
+          <div class="flex gap-2 flex-wrap">
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">PyTorch</span>
           </div>
         </div>
 
-        <div class="border border-gray-700 rounded-lg p-8 hover:border-accent transition-colors"
-          style="border-color: rgba(100, 255, 218, 0.3);">
-          <h3 class="text-xl font-bold text-white mb-3">ML Pipeline</h3>
-          <p class="text-gray-400 mb-4">
-            Developed scalable machine learning pipelines for data processing and model training.
+        <!-- Meta Llama Evaluation -->
+        <div class="border rounded-lg p-8 transition-all hover:border-accent"
+          style="border-color: rgba(100,255,218,0.2);">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="badge-safety">🛡️ AI Safety</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Llama &amp; Avocado Model Evaluation</h3>
+          <p class="text-gray-400 mb-4 leading-relaxed">
+            Adversarial red-teaming and integrity evaluation of frontier LLMs.
+            Identified critical pre-release flaws to prevent unsafe model deployment.
           </p>
-          <div class="flex gap-3 flex-wrap">
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">Python</span>
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">Scikit-learn</span>
-            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded">Docker</span>
+          <div class="flex gap-2 flex-wrap">
+            <span class="skill-tag">Red Teaming</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Adversarial Testing</span>
           </div>
         </div>
       </div>
@@ -509,18 +704,16 @@
           <div class="space-y-6">
             <div>
               <p class="text-gray-400 text-sm uppercase tracking-wider mb-2">Email</p>
-              <a href="mailto:contact@example.com" class="text-xl text-white hover:text-accent transition-colors"
-                style="color: #64ffda;">contact@example.com</a>
+              <a href="mailto:mdallenger@gmail.com" class="text-xl text-white hover:text-accent transition-colors"
+                style="color: #64ffda;">mdallenger@gmail.com</a>
             </div>
             <div>
               <p class="text-gray-400 text-sm uppercase tracking-wider mb-3">Social</p>
               <div class="flex gap-6">
-                <a href="#" class="text-gray-400 hover:text-accent transition-colors"
-                  style="text-decoration: none;">GitHub</a>
-                <a href="#" class="text-gray-400 hover:text-accent transition-colors"
-                  style="text-decoration: none;">LinkedIn</a>
-                <a href="#" class="text-gray-400 hover:text-accent transition-colors"
-                  style="text-decoration: none;">Twitter</a>
+                <a href="https://github.com/213MD" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent transition-colors"
+                  style="text-decoration: none; color: #64ffda;">GitHub</a>
+                <a href="https://www.linkedin.com/in/marklin-dallenger-7a2a16261/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent transition-colors"
+                  style="text-decoration: none; color: #64ffda;">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -542,12 +735,12 @@
 
   <!-- Footer -->
   <footer class="py-8 px-6 md:px-12 border-t border-gray-700 text-center text-gray-500">
-    <p>&copy; 2024 Märklin Dallenger. All rights reserved.</p>
+    <p>&copy; 2026 Märklin Dallenger. All rights reserved.</p>
   </footer>
 
   <script>
     // Typing Animation - Sequential typing for multiple role lines
-    const roles = ['Data Analyst @ Meta', 'ML Developer @ King Kang', 'UCLA Bioengineering Alum'];
+    const roles = ['Applied AI Engineer', 'AI Safety & Integrity', '0-to-1 Builder'];
 
     function typeRole(lineIndex, text, cb) {
       const lines = document.querySelectorAll('.role-line');
